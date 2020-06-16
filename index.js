@@ -12,7 +12,7 @@ let users = [];
 async function buscaUsuarios() {
     var users_temp = fs.readFileSync("./database.txt", 'utf8');
     users = JSON.parse(users_temp);
-    console.log(users);
+    //console.log(users);
 }
 
 //Faz um log pra cada função  
