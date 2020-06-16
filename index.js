@@ -34,10 +34,7 @@ server.get('/users/:busca', (req, res) => {
     var users_searched = [];
 
     var filtered = users.filter(function (obj) {
-        if ((obj.name.toLowerCase().indexOf(busca.toLowerCase()) >= 0) ||
-            (obj.cpf == busca.toLowerCase() >= 0) ||
-            (obj.idade.indexOf(busca.toLowerCase()) >= 0) ||
-            (obj.email.toLowerCase().indexOf(busca.toLowerCase()) >= 0)) {
+        if (obj.name.toLowerCase().indexOf(busca.toLowerCase()) >= 0) {
 
             users_searched.push(obj);
         }
