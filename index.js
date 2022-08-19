@@ -52,6 +52,9 @@ server.post('/users', (req, res) => {
 
     return res.json(users);
 });
-
+//bater ponto
+server.post('/ponto', (req, res)=>{
+    return(console.log("Este é o ponto"))
+})
 
 server.listen(3003); 
